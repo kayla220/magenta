@@ -14,7 +14,8 @@
 
 # Lint as: python3
 """MusicVAE training script."""
-import os
+import os, sys
+sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))))
 
 from magenta.models.music_vae import configs
 from magenta.models.music_vae import data

@@ -15,7 +15,9 @@
 # Lint as: python3
 """Configurations for MusicVAE models."""
 import collections
-
+import sys, os
+sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))))
+# sys.path.append('')
 from magenta.common import merge_hparams
 from magenta.contrib import training as contrib_training
 from magenta.models.music_vae import data
